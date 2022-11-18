@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyz - Portifolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-z"></i>
+            </div>
+            <div class="cabecalho-link">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Technologies</a>
+                </li>
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+                <button>My Contact</button>
+            </div>
+        </header>
+        <div class="container-text">
+            <div class="text">
+                <h2>Ola, Pessoal</h2>
+                <h1>Eu Sou o <span id="nome">Guilherme Salazar</span></h1>
+                <h3>Web Developer and JavaScript Lover.</h3>
+                <div class="redes-sociais">
+                    
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.gg/RtzYqMb9Sx"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/yGuilherme0"><i class="fa-brands fa-github"></i></a>
+                    
+
+                    
+                        <script>
+                            "use strict";
+        
+                            function typeWriter(el) {
+                                const textArray = el.innerHTML.split('');
+                                el.innerHTML = ''
+                                textArray.forEach((letter, i) => {
+                                    setTimeout(() => {
+                                        el.innerHTML += letter
+                                    }, 160 * i)
+                                })
+                            }
+                            typeWriter(nome);
+                        </script>
+                </div>
+                <button>Sobre Mim.</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
